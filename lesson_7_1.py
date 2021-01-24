@@ -26,13 +26,17 @@ class matrix:
             result.append(list(item))
         return matrix(result)
 
-mtrx1 = matrix([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-print(mtrx1)
 
-mtrx2 = matrix([[11, 12, 13], [14, 15, 16], [17, 18, 19]])
-print(mtrx2)
+try:
+    mtrx1 = matrix([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+    print(mtrx1)
 
-mtrx3 = matrix([[21, 22, 23], [24, 25, 26], [27, 28, 29]])
-print(mtrx3)
+    mtrx2 = matrix([[11, 12, 13], [14, 15, 16], [17, 18, 19]])
+    print(mtrx2)
 
-print(mtrx1 + mtrx2 + mtrx3)
+    mtrx3 = matrix([[21, 22, 23], [24, 25, 26], [27, 28, 29]])
+    print(mtrx3)
+
+    print(mtrx1 + mtrx2 + mtrx3)
+except ValueError as err:
+    print(err)
